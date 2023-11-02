@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0FFFF;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    background: #6495ED;
+    text-align: center;
+    overflow: hidden;
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;   
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.active, .menu-bar ul li:hover{
+    background: #45b0b4;
+    border-radius: 3px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: lightskyblue;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted purple;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+.grupo-direita{
+    display:flex;
+    justify-content: right;}
+
+.grupo-esquerda{
+    display: flex;
+    width:60%;
+    height: 50%;
+
+}
+
+.paw-img{
+    margin: 15px;
+    padding: 15px;
+    width: 10%;
+    height: 10%;
+}
